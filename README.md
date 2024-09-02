@@ -43,4 +43,13 @@ Escreva um programa que inverta os caracteres de um string.
 a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código.  
 b) Evite usar funções prontas, como, por exemplo, ```reverse```.
 
-## Resolution
+## Resolução
+
+Todas as resoluções podem ser executadas através do diretório de `scripts`.
+
+**Instalação**:
+- Execute `composer-dump autoload`
+
+**Exemplo de Uso**: No diretório de scripts, execute `php exercise-one-script.php`.
+
+>Observação: Os exercícios dois e cinco necessitam de entrada de dados no terminal.
