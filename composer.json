@@ -1,0 +1,17 @@
+{
+    "name": "mateus/target-challenge",
+    "description": "Target Sistemas challenge resolution",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mateusmirandaribas",
+            "email": "contato.mateusmribas@gmail.com"
+        }
+    ],
+    "require": {}
+}
