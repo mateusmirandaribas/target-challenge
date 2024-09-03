@@ -8,11 +8,11 @@ $billingResult = 0;
 $billingDays = 0;
 $dayAboveAverage = 0;
 
-$jsonData = file_get_contents('../resources/billing.json');
+$jsonData = file_get_contents('../resources/dados.json');
 $billingData = json_decode($jsonData, true);
 
-foreach ($billingData['Billing'] as $day) {
-    $valueDay = $day['value'];
+foreach ($billingData as $day) {
+    $valueDay = $day['valor'];
 
     if ($valueDay > 0) {
         if ($valueDay < $lowerRevenue) {
@@ -30,8 +30,8 @@ foreach ($billingData['Billing'] as $day) {
 
 $averageRevenue = $billingResult / $billingDays;
 
-foreach ($billingData['Billing'] as $day) {
-    $valueDay = $day['value'];
+foreach ($billingData as $day) {
+    $valueDay = $day['valor'];
     if ($valueDay > $averageRevenue) {
         $dayAboveAverage++;
     }
